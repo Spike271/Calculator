@@ -1,5 +1,4 @@
-﻿
-Public Class Form1
+﻿Public Class Form1
     Dim myList As New List(Of String)()
     Dim temp, str, ans As String
 
@@ -69,7 +68,7 @@ Public Class Form1
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles PlusBtn.Click
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
             str = ""
-            expression.Text = expression.Text & PlusBtn.Text
+            expression.Text = expression.Text & " " & PlusBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
                 myList.Add(temp)
@@ -84,7 +83,7 @@ Public Class Form1
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
 
             str = ""
-            expression.Text = expression.Text & MinusBtn.Text
+            expression.Text = expression.Text & " " & MinusBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
                 myList.Add(temp)
@@ -100,7 +99,7 @@ Public Class Form1
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
 
             str = ""
-            expression.Text = expression.Text & MulBtn.Text
+            expression.Text = expression.Text & " " & MulBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
                 myList.Add(temp)
@@ -115,7 +114,7 @@ Public Class Form1
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
 
             str = ""
-            expression.Text = expression.Text & DivBtn.Text
+            expression.Text = expression.Text & " " & DivBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
                 myList.Add(temp)
@@ -129,7 +128,7 @@ Public Class Form1
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles EqualBtn.Click
         str = ""
-        expression.Text = expression.Text & EqualBtn.Text
+        expression.Text = expression.Text & " " & EqualBtn.Text
         myList.Add(TextBox1.Text)
         If temp IsNot Nothing Then
             myList.Add(temp)

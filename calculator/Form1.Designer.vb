@@ -342,14 +342,17 @@ Partial Class Form1
         ' 
         ' expression
         ' 
+        expression.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         expression.AutoSize = True
-        expression.Font = New Font("Segoe UI", 13F)
+        expression.FlatStyle = FlatStyle.Popup
+        expression.Font = New Font("Segoe UI", 13.0F)
         expression.ForeColor = Color.White
-        expression.Location = New Point(475, 37)
+        expression.Location = New Point(112, 23)
+        expression.MinimumSize = New Size(460, 25)
         expression.Name = "expression"
-        expression.Size = New Size(0, 25)
+        expression.Size = New Size(460, 25)
         expression.TabIndex = 20
-        expression.TextAlign = ContentAlignment.MiddleCenter
+        expression.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Form1
         ' 
