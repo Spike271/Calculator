@@ -1,12 +1,24 @@
 ﻿Public Class Form1
     Dim myList As New List(Of String)()
     Dim temp, str, ans As String
+    Dim OnePoint As Boolean = False
+    Dim GotAns As Boolean = False
 
     Private Sub Print()
         If ans IsNot Nothing Then
             expression.Text = ""
             TextBox1.Text = ""
             ans = Nothing
+            ClearAfterAns()
+            If myList.Count > 0 Then
+                myList.Clear()
+            End If
+        End If
+    End Sub
+
+    Private Sub ClearAfterAns()
+        If GotAns Then
+            GotAns = False
         End If
     End Sub
 
@@ -62,12 +74,19 @@
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Point.Click
         Print()
-        TextBox1.Text = TextBox1.Text & Point.Text
+        If Not OnePoint Then
+            TextBox1.Text = TextBox1.Text & Point.Text
+            OnePoint = True
+        End If
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles PlusBtn.Click
+        ClearAfterAns()
+
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
             str = ""
+            OnePoint = False
+
             expression.Text = expression.Text & " " & PlusBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
@@ -80,9 +99,12 @@
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles MinusBtn.Click
+        ClearAfterAns()
+
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
 
             str = ""
+            OnePoint = False
             expression.Text = expression.Text & " " & MinusBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
@@ -96,9 +118,12 @@
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles MulBtn.Click
-        If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
+        ClearAfterAns()
 
+        If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
             str = ""
+            OnePoint = False
+
             expression.Text = expression.Text & " " & MulBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
@@ -111,9 +136,13 @@
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles DivBtn.Click
+        ClearAfterAns()
+
         If myList.Count > 0 Or TextBox1.Text.Length > 0 Then
 
             str = ""
+            OnePoint = False
+
             expression.Text = expression.Text & " " & DivBtn.Text & " "
             myList.Add(TextBox1.Text)
             If temp IsNot Nothing Then
@@ -127,7 +156,12 @@
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles EqualBtn.Click
+        If TextBox1.Text.Length = 0 And myList.Count = 0 Then
+            Return
+        End If
         str = ""
+        OnePoint = False
+
         expression.Text = expression.Text & " " & EqualBtn.Text
         myList.Add(TextBox1.Text)
         If temp IsNot Nothing Then
@@ -137,6 +171,7 @@
 
         TextBox1.Text = EvalRPN(myList.ToArray()).ToString() & " "
         ans = " "
+        GotAns = True
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Back.Click
@@ -149,16 +184,30 @@
                 expression.Text = ""
             End If
         End If
+
+        If Not TextBox1.Text.Contains(".") Then
+            OnePoint = False
+        Else
+            OnePoint = True
+        End If
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Clear.Click
+        If TextBox1.Text.Length = 0 Then
+            Return
+        End If
+
         expression.Text = expression.Text.Replace(TextBox1.Text, "")
+        OnePoint = True
+
         Print()
         TextBox1.Clear()
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Clear_All.Click
         TextBox1.Clear()
+        OnePoint = True
+
         expression.Text = ""
         If myList.Count < 0 Then
             myList.Clear()

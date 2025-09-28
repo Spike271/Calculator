@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|solutionrelative:calculator\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|e:\\data\\visual basic.net\\calculator\\calculator\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|solutionrelative:calculator\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|e:\\data\\visual basic.net\\calculator\\calculator\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|solutionrelative:calculator\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|e:\\data\\visual basic.net\\calculator\\calculator\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{288E28D3-474E-43B5-8DAA-B17F3F223EBC}|calculator\\calculator.vbproj|solutionrelative:calculator\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Designer.vb",
-              "DocumentMoniker": "E:\\DATA\\Visual Basic.Net\\calculator\\calculator\\Form1.Designer.vb",
-              "RelativeDocumentMoniker": "calculator\\Form1.Designer.vb",
-              "ToolTip": "E:\\DATA\\Visual Basic.Net\\calculator\\calculator\\Form1.Designer.vb",
-              "RelativeToolTip": "calculator\\Form1.Designer.vb",
-              "ViewState": "AgIAAFMBAAAAAAAAAIA4wGEBAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-09-27T15:12:22.569Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
@@ -61,14 +48,25 @@
               "RelativeDocumentMoniker": "calculator\\Form1.vb",
               "ToolTip": "E:\\DATA\\Visual Basic.Net\\calculator\\calculator\\Form1.vb",
               "RelativeToolTip": "calculator\\Form1.vb",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAqwIIAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAqwAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-09-21T06:59:01.623Z",
+              "WhenOpened": "2025-09-28T10:23:20.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "E:\\DATA\\Visual Basic.Net\\calculator\\calculator\\Form1.resx",
+              "RelativeDocumentMoniker": "calculator\\Form1.resx",
+              "ToolTip": "E:\\DATA\\Visual Basic.Net\\calculator\\calculator\\Form1.resx",
+              "RelativeToolTip": "calculator\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-28T10:22:54.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "E:\\DATA\\Visual Basic.Net\\calculator\\calculator\\Form1.vb",
               "RelativeDocumentMoniker": "calculator\\Form1.vb",
