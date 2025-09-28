@@ -6,7 +6,7 @@
 
 </div>
 
-## About the Projects
+## About the Project
 
 - Basic arithmetic operations: Addition, Subtraction, Multiplication, Division
 - Intuitive graphical user interface
