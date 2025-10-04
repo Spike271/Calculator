@@ -14,9 +14,7 @@
 
 ## Screenshot
 
-<img src="GitVisuals/img01.png">
-
-<img src="GitVisuals/img02.png">
+<img src="GitVisuals/img01.png"><img src="GitVisuals/img02.png">
 
 ## Getting Started
 
